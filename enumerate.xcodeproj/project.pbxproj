@@ -11,6 +11,10 @@
 		22C03B971FE2E2F600908F3D /* enumerateTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22C03B961FE2E2F600908F3D /* enumerateTests.mm */; };
 		22C03B991FE2E2F600908F3D /* enumerate.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C03B8B1FE2E2F600908F3D /* enumerate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22C03BA51FE2E4C600908F3D /* enumerate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22C03BA31FE2E4C600908F3D /* enumerate.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F97ADB1FEA6EDF0099BCF5 /* enumerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F97AD21FEA6EDF0099BCF5 /* enumerate.framework */; };
+		22F97AE91FEA6F4B0099BCF5 /* enumerateTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22C03B961FE2E2F600908F3D /* enumerateTests.mm */; };
+		22F97AEA1FEA6F540099BCF5 /* enumerate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22C03BA31FE2E4C600908F3D /* enumerate.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F97AEB1FEA6F5A0099BCF5 /* enumerate.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C03B8B1FE2E2F600908F3D /* enumerate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +25,26 @@
 			remoteGlobalIDString = 22C03B871FE2E2F600908F3D;
 			remoteInfo = enumerate;
 		};
+		22F97ADC1FEA6EDF0099BCF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C03B7F1FE2E2F600908F3D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22F97AD11FEA6EDF0099BCF5;
+			remoteInfo = macenumerate;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22F97AEE1FEA70250099BCF5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22C03B881FE2E2F600908F3D /* enumerate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = enumerate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +54,10 @@
 		22C03B961FE2E2F600908F3D /* enumerateTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = enumerateTests.mm; sourceTree = "<group>"; };
 		22C03B981FE2E2F600908F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C03BA31FE2E4C600908F3D /* enumerate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = enumerate.hpp; sourceTree = "<group>"; };
+		22F97AD21FEA6EDF0099BCF5 /* enumerate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = enumerate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F97ADA1FEA6EDF0099BCF5 /* macenumerateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macenumerateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F97AF01FEA70250099BCF5 /* libenumeratestatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libenumeratestatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F97AFD1FEA70630099BCF5 /* libmacenumeratestatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmacenumeratestatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +73,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				22C03B921FE2E2F600908F3D /* enumerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97ACE1FEA6EDF0099BCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AD71FEA6EDF0099BCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F97ADB1FEA6EDF0099BCF5 /* enumerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AED1FEA70250099BCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AFA1FEA70630099BCF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +122,10 @@
 			children = (
 				22C03B881FE2E2F600908F3D /* enumerate.framework */,
 				22C03B911FE2E2F600908F3D /* enumerateTests.xctest */,
+				22F97AD21FEA6EDF0099BCF5 /* enumerate.framework */,
+				22F97ADA1FEA6EDF0099BCF5 /* macenumerateTests.xctest */,
+				22F97AF01FEA70250099BCF5 /* libenumeratestatic.a */,
+				22F97AFD1FEA70630099BCF5 /* libmacenumeratestatic.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +158,22 @@
 			files = (
 				22C03B991FE2E2F600908F3D /* enumerate.h in Headers */,
 				22C03BA51FE2E4C600908F3D /* enumerate.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97ACF1FEA6EDF0099BCF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F97AEA1FEA6F540099BCF5 /* enumerate.hpp in Headers */,
+				22F97AEB1FEA6F5A0099BCF5 /* enumerate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AFB1FEA70630099BCF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +216,76 @@
 			productReference = 22C03B911FE2E2F600908F3D /* enumerateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		22F97AD11FEA6EDF0099BCF5 /* macenumerate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F97AE31FEA6EDF0099BCF5 /* Build configuration list for PBXNativeTarget "macenumerate" */;
+			buildPhases = (
+				22F97ACD1FEA6EDF0099BCF5 /* Sources */,
+				22F97ACE1FEA6EDF0099BCF5 /* Frameworks */,
+				22F97ACF1FEA6EDF0099BCF5 /* Headers */,
+				22F97AD01FEA6EDF0099BCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macenumerate;
+			productName = macenumerate;
+			productReference = 22F97AD21FEA6EDF0099BCF5 /* enumerate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22F97AD91FEA6EDF0099BCF5 /* macenumerateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F97AE61FEA6EDF0099BCF5 /* Build configuration list for PBXNativeTarget "macenumerateTests" */;
+			buildPhases = (
+				22F97AD61FEA6EDF0099BCF5 /* Sources */,
+				22F97AD71FEA6EDF0099BCF5 /* Frameworks */,
+				22F97AD81FEA6EDF0099BCF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22F97ADD1FEA6EDF0099BCF5 /* PBXTargetDependency */,
+			);
+			name = macenumerateTests;
+			productName = macenumerateTests;
+			productReference = 22F97ADA1FEA6EDF0099BCF5 /* macenumerateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22F97AEF1FEA70250099BCF5 /* enumeratestatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F97AF61FEA70250099BCF5 /* Build configuration list for PBXNativeTarget "enumeratestatic" */;
+			buildPhases = (
+				22F97AEC1FEA70250099BCF5 /* Sources */,
+				22F97AED1FEA70250099BCF5 /* Frameworks */,
+				22F97AEE1FEA70250099BCF5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = enumeratestatic;
+			productName = enumeratestatic;
+			productReference = 22F97AF01FEA70250099BCF5 /* libenumeratestatic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		22F97AFC1FEA70630099BCF5 /* macenumeratestatic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22F97B051FEA70630099BCF5 /* Build configuration list for PBXNativeTarget "macenumeratestatic" */;
+			buildPhases = (
+				22F97AF91FEA70630099BCF5 /* Sources */,
+				22F97AFA1FEA70630099BCF5 /* Frameworks */,
+				22F97AFB1FEA70630099BCF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macenumeratestatic;
+			productName = macenumeratestatic;
+			productReference = 22F97AFD1FEA70630099BCF5 /* libmacenumeratestatic.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +300,22 @@
 						ProvisioningStyle = Automatic;
 					};
 					22C03B901FE2E2F600908F3D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					22F97AD11FEA6EDF0099BCF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					22F97AD91FEA6EDF0099BCF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					22F97AEF1FEA70250099BCF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					22F97AFC1FEA70630099BCF5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -173,6 +335,10 @@
 			targets = (
 				22C03B871FE2E2F600908F3D /* enumerate */,
 				22C03B901FE2E2F600908F3D /* enumerateTests */,
+				22F97AD11FEA6EDF0099BCF5 /* macenumerate */,
+				22F97AD91FEA6EDF0099BCF5 /* macenumerateTests */,
+				22F97AEF1FEA70250099BCF5 /* enumeratestatic */,
+				22F97AFC1FEA70630099BCF5 /* macenumeratestatic */,
 			);
 		};
 /* End PBXProject section */
@@ -186,6 +352,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		22C03B8F1FE2E2F600908F3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AD01FEA6EDF0099BCF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AD81FEA6EDF0099BCF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,6 +390,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		22F97ACD1FEA6EDF0099BCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AD61FEA6EDF0099BCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F97AE91FEA6F4B0099BCF5 /* enumerateTests.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AEC1FEA70250099BCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22F97AF91FEA70630099BCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +426,11 @@
 			isa = PBXTargetDependency;
 			target = 22C03B871FE2E2F600908F3D /* enumerate */;
 			targetProxy = 22C03B931FE2E2F600908F3D /* PBXContainerItemProxy */;
+		};
+		22F97ADD1FEA6EDF0099BCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22F97AD11FEA6EDF0099BCF5 /* macenumerate */;
+			targetProxy = 22F97ADC1FEA6EDF0099BCF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -265,6 +479,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -272,6 +487,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,6 +549,8 @@
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_UNROLL_LOOPS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -341,6 +559,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LLVM_LTO = YES_THIN;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -457,6 +676,134 @@
 			};
 			name = Release;
 		};
+		22F97AE41FEA6EDF0099BCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = enumerate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prettysimple.macenumerate;
+				PRODUCT_NAME = enumerate;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		22F97AE51FEA6EDF0099BCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = enumerate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prettysimple.macenumerate;
+				PRODUCT_NAME = enumerate;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22F97AE71FEA6EDF0099BCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				INFOPLIST_FILE = enumerateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prettysimple.macenumerateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22F97AE81FEA6EDF0099BCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				INFOPLIST_FILE = enumerateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prettysimple.macenumerateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		22F97AF71FEA70250099BCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22F97AF81FEA70250099BCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22F97B061FEA70630099BCF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22F97B071FEA70630099BCF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MWLR2HTMFW;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -483,6 +830,42 @@
 			buildConfigurations = (
 				22C03BA01FE2E2F600908F3D /* Debug */,
 				22C03BA11FE2E2F600908F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F97AE31FEA6EDF0099BCF5 /* Build configuration list for PBXNativeTarget "macenumerate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F97AE41FEA6EDF0099BCF5 /* Debug */,
+				22F97AE51FEA6EDF0099BCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F97AE61FEA6EDF0099BCF5 /* Build configuration list for PBXNativeTarget "macenumerateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F97AE71FEA6EDF0099BCF5 /* Debug */,
+				22F97AE81FEA6EDF0099BCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F97AF61FEA70250099BCF5 /* Build configuration list for PBXNativeTarget "enumeratestatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F97AF71FEA70250099BCF5 /* Debug */,
+				22F97AF81FEA70250099BCF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22F97B051FEA70630099BCF5 /* Build configuration list for PBXNativeTarget "macenumeratestatic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22F97B061FEA70630099BCF5 /* Debug */,
+				22F97B071FEA70630099BCF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
