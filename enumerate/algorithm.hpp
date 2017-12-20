@@ -36,12 +36,12 @@
 namespace ps
 {
     template<class Range, class Function>
-    inline Function for_enumerate(Range r, Function f)
+    inline Function for_enumerate(Range&& r, Function&& f)
     {
         using traits = std::iterator_traits<decltype(std::begin(std::declval<Range>()))>;
         static_assert(std::is_same<typename traits::iterator_category, std::random_access_iterator_tag>::value, "");
 
-        for(typename Range::size_type i = 0; i < r.size(); ++i)
+        for(typename std::decay_t<Range>::size_type i = 0; i < r.size(); ++i)
         {
             f(i, r[i]);
         }
