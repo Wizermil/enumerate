@@ -170,4 +170,25 @@ static constexpr std::size_t num_sample = 500000000;
     }];
 }
 
+- (void)testForAlgorithm {
+    [self measureMetrics:[self class].defaultPerformanceMetrics automaticallyStartMeasuring:NO forBlock:^{
+        std::vector<std::size_t> data;
+        data.reserve(num_sample);
+        for (std::size_t i = 0; i < num_sample; ++i)
+        {
+            data.emplace_back(i);
+        }
+
+        std::size_t total = 0;
+
+        [self startMeasuring];
+        ps::for_enumerate(data, [&total](auto index, const auto& val) {
+            total += index * val;
+        });
+        [self stopMeasuring];
+
+        std::cout << total << '\n';
+    }];
+}
+
 @end

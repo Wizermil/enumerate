@@ -2,6 +2,8 @@
 //  enumerate.hpp
 //  enumerate
 //
+// Created by Mathieu Garaud on 14/12/2017.
+//
 // MIT License
 //
 // Copyright © 2017 Pretty Simple

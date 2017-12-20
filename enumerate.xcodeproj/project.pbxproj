@@ -15,6 +15,8 @@
 		22F97AE91FEA6F4B0099BCF5 /* enumerateTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22C03B961FE2E2F600908F3D /* enumerateTests.mm */; };
 		22F97AEA1FEA6F540099BCF5 /* enumerate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22C03BA31FE2E4C600908F3D /* enumerate.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		22F97AEB1FEA6F5A0099BCF5 /* enumerate.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C03B8B1FE2E2F600908F3D /* enumerate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F97B111FEA72260099BCF5 /* algorithm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22F97B0C1FEA72260099BCF5 /* algorithm.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F97B121FEA72260099BCF5 /* algorithm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 22F97B0C1FEA72260099BCF5 /* algorithm.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		22F97ADA1FEA6EDF0099BCF5 /* macenumerateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macenumerateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F97AF01FEA70250099BCF5 /* libenumeratestatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libenumeratestatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F97AFD1FEA70630099BCF5 /* libmacenumeratestatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmacenumeratestatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F97B0C1FEA72260099BCF5 /* algorithm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = algorithm.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,7 @@
 				22C03B8B1FE2E2F600908F3D /* enumerate.h */,
 				22C03B8C1FE2E2F600908F3D /* Info.plist */,
 				22C03BA31FE2E4C600908F3D /* enumerate.hpp */,
+				22F97B0C1FEA72260099BCF5 /* algorithm.hpp */,
 			);
 			path = enumerate;
 			sourceTree = "<group>";
@@ -158,6 +162,7 @@
 			files = (
 				22C03B991FE2E2F600908F3D /* enumerate.h in Headers */,
 				22C03BA51FE2E4C600908F3D /* enumerate.hpp in Headers */,
+				22F97B111FEA72260099BCF5 /* algorithm.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +172,7 @@
 			files = (
 				22F97AEA1FEA6F540099BCF5 /* enumerate.hpp in Headers */,
 				22F97AEB1FEA6F5A0099BCF5 /* enumerate.h in Headers */,
+				22F97B121FEA72260099BCF5 /* algorithm.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

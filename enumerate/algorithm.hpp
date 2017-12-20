@@ -1,8 +1,8 @@
 //
-// enumerate.h
-// enumerate
+//  algorithm.hpp
+//  enumerate
 //
-// Created by Mathieu Garaud on 14/12/2017.
+// Created by Mathieu Garaud on 20/12/2017.
 //
 // MIT License
 //
@@ -27,22 +27,26 @@
 // SOFTWARE.
 //
 
-#ifndef ENUMERATE_ENUMERATE_H
-#define ENUMERATE_ENUMERATE_H
+#ifndef ENUMERATE_ALGORITHM_HPP
+#define ENUMERATE_ALGORITHM_HPP
 
-#ifdef __cplusplus
-#define ENUMERATE_EXTERN extern "C"
-#else
-#define ENUMERATE_EXTERN
-#endif
+#include <iterator>
+#include <type_traits>
 
-//! Project version number for future.
-ENUMERATE_EXTERN double enumerateVersionNumber;
+namespace ps
+{
+    template<class Range, class Function>
+    inline Function for_enumerate(Range r, Function f)
+    {
+        using traits = std::iterator_traits<decltype(std::begin(std::declval<Range>()))>;
+        static_assert(std::is_same<typename traits::iterator_category, std::random_access_iterator_tag>::value, "");
 
-//! Project version string for future.
-ENUMERATE_EXTERN const unsigned char enumerateVersionString[];
+        for(typename Range::size_type i = 0; i < r.size(); ++i)
+        {
+            f(i, r[i]);
+        }
+        return f;
+    }
+}
 
-#include <enumerate/enumerate.hpp>
-#include <enumerate/algorithm.hpp>
-
-#endif // ENUMERATE_ENUMERATE_H
+#endif // ENUMERATE_ALGORITHM_HPP
