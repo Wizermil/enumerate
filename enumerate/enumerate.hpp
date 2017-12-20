@@ -33,7 +33,6 @@
 #include <iterator>
 #include <type_traits>
 #include <utility>
-#include <limits>
 
 namespace ps
 {
